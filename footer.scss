@@ -1,0 +1,64 @@
+.footer{
+	margin-top:auto;
+	display: flex;
+	flex-direction: column;
+	&-links{
+		height:50px;
+		margin:0 auto;
+		width: 1140px;
+		display:flex;
+		align-items: center;
+	}
+	&-info{
+		display:flex;
+		width: 1140px;
+		margin: 0 auto;
+		height: 338px;
+		
+	}
+	&-info{
+		height: 338px;
+		
+	}
+	&-description{
+		line-height: 26px;
+		font-size: 18px;
+		width: 360px;
+		margin-top: 26px;
+		color: rgba(43, 41, 45, 0.6);
+	}
+	
+	
+}
+.downloads{
+	margin-top:25px;
+	&__item{
+		margin-right:10px;
+	}
+}
+
+.footer-line{
+	border-top:1px solid $main-color;
+	width: 100%;
+	opacity: 0.1;
+	margin: 0;
+}
+.terms{
+	line-height: 50px;
+	
+	
+	&__link{
+		margin-right: 22px;
+		font-size: 14px;
+		text-decoration: none;
+		color:$main-color;
+		opacity: 0.6;
+		
+	}
+}
+.social-links{
+	margin-left: auto
+}
+.social-link{
+	margin-left: 20px;	
+}
