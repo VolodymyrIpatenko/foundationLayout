@@ -1,0 +1,64 @@
+@import "mixin.scss";
+.headline{
+	position: relative;
+	width: 1140px;
+	margin: auto;
+	display: flex;
+	margin-top: 84px;
+	padding-bottom: 77px;
+	
+	&__learn-btn{
+		margin-left: 10px;
+		background: linear-gradient(180deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 1e-05) 100%), #FFFFFF;
+		color:#3040c4;
+		width: 158px;
+		height: 48px;
+		font-size: 18px;
+		font-weight: 700;
+		border-radius: 2px;
+		border:none;
+		box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1), 0px 4px 6px rgba(0, 0, 0, 0.05), inset 0px 1px 0px rgba(255, 255, 255, 0.1);
+
+	}
+	&__action-button{
+		@include action-btn();
+	}
+
+	&-banner{
+		position: relative;
+		right: -105px;
+		top:0;
+		width: 796px;
+		height: 448px;
+		margin-left: auto;
+	}
+	&__description{
+		margin-top: 34px;
+		margin-bottom: 0;
+		height: 102px;
+		width: 456px;
+		font-size: 24px;
+		line-height: 34px;
+	}
+	&__title{
+		margin: 0;
+		width: 754px;
+		height: 165px;
+		font-weight: 700;
+		font-size: 80px;
+		line-height: 78px;
+		letter-spacing: -0.5px;
+		z-index: 1;
+		position: relative;
+
+	}
+	&__content{
+		z-index: 1;
+		position: absolute;
+	}
+	&__actions{
+		display: flex;
+		margin-top: 58px;
+		
+	}
+} 
