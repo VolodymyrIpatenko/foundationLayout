@@ -2,8 +2,11 @@
 	width: 100%;
 	margin:auto;
 	display: flex;
-	justify-content:space-between;
+	justify-content:space-around;
 	align-items:center;
 	padding-top: 30px;
 	padding-bottom: 106px;
+	&__logo{
+		filter:brightness(0);
+	}
 }

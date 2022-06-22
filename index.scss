@@ -5,8 +5,12 @@
 @import "mixin.scss";
 @import "about.scss";
 @import "customers.scss";
+@import "features.scss";
 *{
 	box-sizing: border-box;
+}
+body{
+	margin: 0;
 }
 
 html{
