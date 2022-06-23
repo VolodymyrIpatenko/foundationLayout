@@ -1,12 +1,50 @@
 .customers{
-	width: 100%;
-	margin:auto;
+	width: 320px;
 	display: flex;
-	justify-content:space-around;
-	align-items:center;
-	padding-top: 30px;
-	padding-bottom: 106px;
+	flex-wrap: wrap;
+	@include desk(){
+		width: 1400px;
+		margin:auto;
+		display: flex;
+		justify-content:space-around;
+		align-items:center;
+		padding-top: 30px;
+		padding-bottom: 106px;
+	}
+	&__item{
+		height: 94px;
+		width: 107px;
+		border-bottom: 1px solid #e3e3e3;
+		border-right:1px solid #e3e3e3;
+		display: flex;
+		justify-content:center;
+		align-items:center;
+		@include desk(){
+			border: none;
+		}
+	
+	}
+	
+	&__row{ 
+		display: flex;
+		@include desk(){
+                display: flex;
+		flex: 1;
+		justify-content:space-around;
+		
+		}
+		
+		
+	}
+	
+	
 	&__logo{
+		max-width: 80%;
 		filter:brightness(0);
 	}
+	&__item:last-child{
+		border-right: none;
+	}
+	
+	
 }
