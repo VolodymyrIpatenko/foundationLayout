@@ -18,9 +18,16 @@ html{
 	font-family:"Work Sans" ,sans-serif;
 }
 .page{
+	width: 100%;
+	overflow-x: hidden;
+
+
+&{
+	@include desk();
 	width: 1400px;
 	margin:auto;
 	min-height: 100vh;
 	display: flex;
 	flex-direction: column;
+}
 }
