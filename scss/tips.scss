@@ -91,7 +91,7 @@
   }
 }
 
-@include for-large-up {
+@include desk() {
   .engage,
   .support {
     display: none;
@@ -184,7 +184,7 @@
   }
 }
 
-@include for-small {
+
   .tips-hidden-image {
     display: none;
   }
@@ -202,4 +202,3 @@
       display: none;
     }
   }
-}

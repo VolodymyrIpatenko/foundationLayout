@@ -1,3 +1,5 @@
+ @import "mixin.scss";
+
 .headline {
   background-color: $back-color;
   padding: 35px 15px 36px 15px;
@@ -16,12 +18,16 @@
   }
 
   &__start-button {
+    @include start-btn();
     margin-bottom: 15px;
-  }
+  
+}
 
   &__learn-button {
+    @include learn-btn;
     margin-bottom: 33px;
-  }
+  
+}
 
   &__image {
     width: 320px;
@@ -30,7 +36,7 @@
   }
 }
 
-@include for-large-up {
+@include desk() {
   .headline {
     width: 1140px;
     height: 609px;
@@ -86,8 +92,7 @@
   }
 }
 
-@include for-small {
+ 
   .image {
     left: -15px;
   }
-}

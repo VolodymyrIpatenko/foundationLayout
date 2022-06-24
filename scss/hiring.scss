@@ -76,7 +76,7 @@
   }
 }
 
-@include for-large-up {
+@include desk() {
   .hiring {
     padding: 0;
     display: flex;
@@ -156,10 +156,9 @@
   }
 }
 
-@include for-small {
+
   .vacancy {
     &__button-arrow-white {
       display: none;
     }
   }
-}

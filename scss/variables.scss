@@ -12,14 +12,5 @@ $inbox-back-color: #fcf0e366;
 
 $blue-color: #3040c4;
 
-@mixin for-large-up {
-  @media screen and (min-width: 1400px) {
-    @content;
-  }
-}
 
-@mixin for-small {
-  @media screen and (max-width: 1399px) {
-    @content;
-  }
-}
+

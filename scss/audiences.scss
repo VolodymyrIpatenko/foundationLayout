@@ -68,7 +68,7 @@
   }
 }
 
-@include for-large-up {
+@include desk() {
   .audience {
     height: 983px;
     padding: 108px 131px 110px 130px;

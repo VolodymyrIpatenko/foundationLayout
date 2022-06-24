@@ -81,7 +81,7 @@ footer {
   }
 }
 
-@include for-large-up {
+@include desk() {
   .footer {
     display: flex;
     flex-direction: column;
@@ -207,10 +207,9 @@ footer {
   }
 }
 
-@include for-small {
+
   .about-company {
     &__description {
       display: none;
     }
   }
-}

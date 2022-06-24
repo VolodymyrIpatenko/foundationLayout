@@ -1,4 +1,4 @@
-.get-started-button {
+@mixin start-btn {
   width: 290px;
   height: 48px;
   background-color: $blue-color;
@@ -10,7 +10,7 @@
   cursor: pointer;
 }
 
-.learn-more-button {
+@mixin learn-btn {
   width: 290px;
   height: 48px;
   background-color: #fff;
@@ -22,10 +22,13 @@
   cursor: pointer;
 }
 
-.figure {
-  margin: 0;
+@mixin desk() {
+  @media screen and (min-width: 1400px) {
+    @content;
+  }
 }
-
-.line {
-  border-bottom: 1px solid #e3e3e3;
+@mixin mob(){
+  @media screen and (max-width:1399px){
+    @content;
+  }
 }

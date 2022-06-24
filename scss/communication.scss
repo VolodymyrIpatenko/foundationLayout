@@ -74,7 +74,7 @@
   margin-top: 32px;
 }
 
-@include for-large-up {
+@include desk() {
   .communication {
     display: flex;
     flex-direction: column;

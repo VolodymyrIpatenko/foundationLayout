@@ -69,7 +69,7 @@
   color: $second-font-color;
 }
 
-@include for-large-up {
+@include desk() {
   .inbox {
     display: flex;
     height: 790px;
@@ -128,10 +128,8 @@
   }
 }
 
-@include for-small {
   .inbox {
     &__caption {
       display: none;
     }
   }
-}
