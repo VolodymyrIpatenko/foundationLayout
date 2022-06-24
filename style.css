@@ -789,6 +789,15 @@ customers__logo {
   margin-top: 30px;
 }
 .audience__learn-button {
+  width: 290px;
+  height: 48px;
+  background-color: #fff;
+  border: none;
+  border-radius: 2px;
+  color: #3040c4;
+  font-size: 18px;
+  font-weight: 700;
+  cursor: pointer;
   margin-top: 12px;
 }
 
@@ -843,6 +852,15 @@ customers__logo {
     margin-top: 34px;
   }
   .audience__start-button {
+    width: 290px;
+    height: 48px;
+    background-color: #3040c4;
+    border: none;
+    border-radius: 2px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
     width: 160px;
     margin: 0;
     margin-right: 10px;
@@ -1033,6 +1051,15 @@ customers__logo {
     height: 30px;
   }
   .email-form__button {
+    width: 290px;
+    height: 48px;
+    background-color: #3040c4;
+    border: none;
+    border-radius: 2px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
     margin: 0;
     width: 160px;
     height: 48px;
@@ -1353,8 +1380,10 @@ footer__line {
     margin: 0;
   }
 }
-.about-company__description {
-  display: none;
+@media screen and (max-width: 1399px) {
+  .about-company__description {
+    display: none;
+  }
 }
 
 * {

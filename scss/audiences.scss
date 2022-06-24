@@ -1,3 +1,4 @@
+ @import "mixin.scss";
 .audience {
   padding: 50px 15px;
   display: flex;
@@ -32,6 +33,7 @@
   }
 
   &__learn-button {
+    @include learn-btn();
     margin-top: 12px;
   }
 }
@@ -94,6 +96,7 @@
     }
 
     &__start-button {
+      @include start-btn();
       width: 160px;
       margin: 0;
       margin-right: 10px;
