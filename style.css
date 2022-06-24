@@ -253,11 +253,11 @@
     margin-top: 6px;
   }
 }
-customers {
+.customers {
   display: flex;
   flex-wrap: wrap;
 }
-customers__item {
+.customers__item {
   border-bottom: 1px solid #e3e3e3;
   border-right: 1px solid #e3e3e3;
   height: 94px;
@@ -267,13 +267,13 @@ customers__item {
   align-items: center;
   flex: 1;
 }
-customers__item:last-child {
+.customers__item:last-child {
   border-right: none;
 }
-customers__container {
+.customers__container {
   display: flex;
 }
-customers__logo {
+.customers__logo {
   filter: brightness(0);
 }
 

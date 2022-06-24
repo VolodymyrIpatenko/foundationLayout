@@ -1,4 +1,5 @@
-customers {
+@import "mixin.scss";
+.customers {
   display: flex;
   flex-wrap: wrap;
 
