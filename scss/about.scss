@@ -1,41 +1,37 @@
-.about{
-	padding: 46px 15px;
-	width: 320px;
-	background-color: #F4F5F7;
-	@include desk(){
-		width: 100%;
-		padding: 77px 130px 76px 130px;
-		margin: auto;
-		display: flex;
-		justify-content: space-between;
-		background: #F4F5F7;
-	}
+.about {
+  background-color: $second-back-color;
+  padding: 46px 15px 46px 15px;
 }
 
+.article {
+  &__title {
+    margin: 0;
+    line-height: 32px;
+    font-size: 22px;
+  }
 
-.article{
-	.article:last-child{
-	margin-top: 20px;
-	@include desk(){
-		width: 555px;
-		margin: 0;
-	}
-	
+  &__text {
+    line-height: 32px;
+    font-size: 22px;
+  }
 }
-	
-	
-	&__title{
-		font-weight: 700;
-		font-size: 22px;
-		line-height: 32px;
-		margin: 0;
-		color:$main-color;
-	}
-	&__text{
-		
-		font-size: 22px;
-		line-height: 32px;
-		margin: 0;
-		margin-top: 6px;
-	}
+
+@include for-large-up {
+  .about {
+    display: flex;
+    padding: 77px 131px 76px 130px;
+  }
+
+  .article {
+    width: 555px;
+
+    &:first-child {
+      margin-right: 29px;
+    }
+
+    &__text {
+      margin: 0;
+      margin-top: 6px;
+    }
+  }
 }
