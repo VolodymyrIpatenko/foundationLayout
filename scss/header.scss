@@ -5,9 +5,10 @@
   display: flex;
 
   &__start-button {
-    @include start-btn();
+    
     @include desk(){
       margin-left: 56px;
+      @include start-btn();
     }
 
   }
