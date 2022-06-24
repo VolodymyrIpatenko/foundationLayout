@@ -6,9 +6,9 @@
 
   &__start-button {
     @include start-btn();
-    width: 160px;
-    height: 48px;
-    margin-left: 56px;
+    @include desk(){
+      margin-left: 56px;
+    }
 
   }
 

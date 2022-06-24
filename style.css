@@ -14,9 +14,11 @@
   font-size: 18px;
   font-weight: 700;
   cursor: pointer;
-  width: 160px;
-  height: 48px;
-  margin-left: 56px;
+}
+@media screen and (min-width: 1400px) {
+  .header__start-button {
+    margin-left: 56px;
+  }
 }
 .header__menu-button {
   background: transparent;
@@ -124,7 +126,7 @@
 }
 .headline {
   background-color: #f3c6bd;
-  padding: 35px 15px 36px 15px;
+  padding: 15px 35px 15px 36px;
 }
 .headline__title {
   font-weight: 700;
