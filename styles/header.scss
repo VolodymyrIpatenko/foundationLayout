@@ -1,32 +1,32 @@
  @import "mixin.scss";
  .header {
+  display: flex;
   height: 64px;
   min-width: 320px;
-  display: flex;
-
+  
   &__start-button {
     
     @include desk(){
       margin-left: 56px;
       @include start-btn();
     }
-
+    
   }
-
+  
   &__menu-button {
-    background: transparent;
-    border: none;
     padding: 0;
     margin-left: auto;
+    background: transparent;
+    border: none;
     border-left: 1px solid #00000026;
   }
-
+  
   &__menu-icon {
-    background-image: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/icon-hamburger.png);
     display: inline-block;
     width: 18px;
     height: 13px;
     margin: 26px 20px 25px 20px;
+    background-image: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/icon-hamburger.png);
   }
 }
 
@@ -34,24 +34,24 @@
   display: flex;
   align-items: center;
   margin-top: 2px;
-
+  
   &__image {
     width: 48px;
     height: 48px;
     margin: 8px 13px 8px 15px;
   }
-
+  
   &__text {
     display: flex;
     flex-direction: column;
     justify-content: center;
   }
-
+  
   &__name {
     font-weight: 700;
     font-size: 18px;
   }
-
+  
   &__description {
     line-height: 25px;
     font-size: 18px;
@@ -62,28 +62,27 @@
 .navigation {
   display: flex;
   margin-left: auto;
-
+  
   &__item {
-    color: $font-color;
+    margin-right: 50px;
     text-decoration: none;
     font-size: 18px;
     line-height: 25px;
-    margin-right: 50px;
-
+    color: $font-color;
     &:last-child {
       margin-right: 0;
       display: flex;
       align-items: center;
     }
-
+    
     &_selected {
       font-weight: 700;
     }
   }
-
+  
   &__arrow {
-    margin-left: 11px;
     display: inline-block;
+    margin-left: 11px;
     width: 8px;
     height: 5px;
     background-image: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/arrow.png);
@@ -92,30 +91,30 @@
 
 @include desk() {
   .top-section {
-    background-color: $back-color;
     padding-top: 39px;
+    background-color: $back-color;
   }
-
+  
   .header {
+    display: flex;
+    align-items: center;
+    margin: auto;
     width: 1140px;
     height: 62px;
     background-color: $back-color;
-    margin: auto;
-    display: flex;
-    align-items: center;
-
+    
     &__menu-button {
       display: none;
     }
   }
-
+  
   .header-logo {
     &__image {
       width: 60px;
       height: 60px;
       margin-right: 15px;
     }
-
+    
     &__name {
       line-height: 25px;
       font-size: 20px;
@@ -129,13 +128,13 @@
       display: none;
     }
   }
-
+  
   .header-logo {
     &__description {
       display: none;
     }
   }
-
+  
   .navigation {
     display: none;
   }

@@ -4,14 +4,14 @@
   flex-wrap: wrap;
 
   &__item {
-    border-bottom: 1px solid #e3e3e3;
-    border-right: 1px solid #e3e3e3;
-    height: 94px;
-    width: 107px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex: 1;
+    height: 94px;
+    width: 107px;
+    border-bottom: 1px solid #e3e3e3;
+    border-right: 1px solid #e3e3e3;
   }
 
   &__item:last-child {

@@ -1,24 +1,24 @@
 @mixin start-btn {
   width: 290px;
   height: 48px;
-  background-color: $blue-color;
   border: none;
   border-radius: 2px;
-  color: #fff;
   font-size: 18px;
   font-weight: 700;
+  color: #fff;
+  background-color: $blue-color;
   cursor: pointer;
 }
 
 @mixin learn-btn {
   width: 290px;
   height: 48px;
-  background-color: #fff;
   border: none;
   border-radius: 2px;
-  color: $blue-color;
   font-size: 18px;
   font-weight: 700;
+  background-color: #fff;
+  color: $blue-color;
   cursor: pointer;
 }
 

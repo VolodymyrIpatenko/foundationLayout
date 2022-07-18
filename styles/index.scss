@@ -27,7 +27,7 @@ html {
   margin: auto;
   display: flex;
   flex-direction: column;
-  @include desk() ;
+  @include desk();
   
 }
 .figure {
