@@ -1,16 +1,14 @@
-@import "mixin.scss";
+// @import "mixin.scss";
 .order {
   padding: 50px 15px;
   display: flex;
   flex-direction: column;
   align-items: center;
   background-color: $second-back-color;
-  
   &__image {
     width: 200px;
     height: 220px;
   }
-  
   &__title {
     margin: 0;
     margin-top: 40px;
@@ -20,7 +18,6 @@
     text-align: center;
     letter-spacing: -0.25px;
   }
-  
   &__description {
     margin: 0;
     margin-top: 16px;
@@ -28,19 +25,17 @@
     line-height: 32px;
   }
 }
-
 .email-form {
   margin-top: 40px;
   display: flex;
   flex-direction: column;
-  
   &__input {
+    margin-bottom: 12px;
     width: 290px;
     height: 48px;
     border-radius: 2px;
     border: #2b292d33 1px solid;
     text-align: center;
-    
     &::placeholder {
       height: 30px;
       color: $font-color;
@@ -48,74 +43,59 @@
       line-height: 13px;
     }
   }
-  
   &__button {
     margin-top: 12px;
+    @include start-btn();
+    margin: 0;
+    margin-left: 10px;
+    width: 290px;
+    height: 48px;
   }
 }
-
 .trial {
   margin-top: 10px;
   font-size: 14px;
   line-height: 22px;
   color: $second-font-color;
-  
   &__link {
     color: $selected-blue-color;
   }
 }
-
 @include desk() {
   .order {
     flex-direction: row;
     padding: 73px 228px 72px 224px;
     height: 441px;
-    
     &__image {
       width: 100%;
       height: 100%;
     }
-    
     &__container {
       margin-left: 121px;
       display: flex;
       flex-direction: column;
       justify-content: center;
     }
-    
     &__title {
       margin: 0;
       text-align: left;
     }
-    
     &__description {
       width: 555px;
       margin: 0;
       margin-top: 12px;
     }
   }
-  
   .email-form {
     flex-direction: row;
     margin-top: 26px;
-    
     &__input {
-      margin: 0;
       width: 385px;
       text-align: left;
       padding-left: 15px;
       &::placeholder {
         height: 30px;
       }
-    }
-    
-    &__button {
-      @include start-btn();
-      margin: 0;
-      margin-left: 10px;
-      width: 160px;
-      height: 48px;
-      
     }
   }
 }

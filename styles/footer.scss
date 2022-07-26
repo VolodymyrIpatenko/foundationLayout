@@ -1,45 +1,40 @@
- @import "mixin.scss";
- footer {
+
+footer {
   padding-top: 40px;
-  
   &__line {
     margin-top: 40px;
     border-top: 1px solid #e3e3e3;
   }
 }
-
 .footer-logo {
   &__name {
     font-weight: 700;
   }
-  
   &__image {
     display: block;
     margin: auto;
   }
-  
   &__text {
     text-align: center;
     line-height: 25px;
     font-size: 18px;
   }
-  
   &__desсription {
     color: $second-font-color;
   }
 }
-
 .downloads {
   display: flex;
   justify-content: center;
   margin-top: 31px;
-  
-  
+  @include desk(){
+    display: flex;
+    justify-content:flex-start
+  }
   &__item {
     margin-right: 10px;
   }
 }
-
 .product-nav,
 .company-nav {
   &__title {
@@ -48,7 +43,6 @@
     line-height: 28px;
     font-size: 22px;
   }
-  
   &__list {
     margin: 0;
     padding: 0;
@@ -59,11 +53,9 @@
     color: $second-font-color;
   }
 }
-
 .terms-nav {
   margin-top: 30px;
   display: flex;
-  
   &__item {
     margin-left: 15px;
     font-size: 14px;
@@ -72,38 +64,30 @@
     color: $second-font-color;
   }
 }
-
 .social-links {
   display: flex;
   margin: 31px 0 23px 15px;
-  
   &__item {
     margin-right: 20px;
     display: block;
   }
 }
-
 @include desk() {
   .footer {
     display: flex;
     flex-direction: column;
     padding: 0;
     height: 389px;
-    
     &__line {
       display: none;
     }
-    
     &__desktop-line {
       margin-top: 59px;
       border-bottom: 1px solid #e3e3e3;
-      
     }
-    
     &__navigation {
       display: flex;
     }
-    
     &__links {
       display: flex;
       align-items: center;
@@ -112,28 +96,22 @@
       padding: 0 132px 0 130px;
     }
   }
-  
   .footer-logo {
     display: flex;
     align-items: center;
-    
     &__image {
       margin: 0;
     }
-    
     &__name {
       text-align: left;
     }
-    
     &__text {
       margin-left: 9px;
     }
-    
     &__name {
       font-size: 20px;
       line-height: 25px;
     }
-    
     &__desсription {
       font-size: 18px;
       line-height: 25px;
@@ -144,8 +122,9 @@
     padding-left: 130px;
     margin-top: 44px;
     width: 615px;
-    
     &__description {
+      display:none;
+      @include desk() {
       display: inline-block;
       margin-top: 26px;
       width: 360px;
@@ -153,34 +132,29 @@
       font-size: 18px;
       line-height: 26px;
       color: $second-font-color;
+      }
     }
   }
-  
   .downloads {
     margin: 0;
     margin-top: 25px;
-    
     &__item {
       margin: 0;
-      
       &:last-of-type {
         margin-left: 10px;
       }
     }
   }
-  
   .additional-navigation {
     display: flex;
     margin-top: 60px;
   }
-  
   .product-nav,
   .company-nav {
     &__title {
       margin: 0;
       font-size: 22px;
     }
-    
     &__list {
       margin: 0;
       margin-top: 18px;
@@ -188,32 +162,19 @@
       line-height: 30px;
     }
   }
-  
   .company-nav {
     margin-left: 90px;
   }
-  
   .terms-nav {
     display: flex;
     justify-content: space-between;
     margin: 0;
     width: 180px;
-    
     &__item {
       margin: 0;
     }
   }
-  
   .social-links {
     margin: 0;
-  }
-}
-
-
-.about-company {
-  &__description {
-    @include mob(){
-      display: none;
-    }
   }
 }

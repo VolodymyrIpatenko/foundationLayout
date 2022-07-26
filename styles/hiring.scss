@@ -1,7 +1,6 @@
-@import "mixin.scss";
+// @import "mixin.scss";
 .hiring {
   padding: 50px 15px;
-  
   &__title {
     margin: 0;
     font-size: 40px;
@@ -9,7 +8,6 @@
     letter-spacing: -0.36px;
     text-align: center;
   }
-  
   &__description {
     margin: 0;
     margin-top: 18px;
@@ -17,7 +15,6 @@
     line-height: 34px;
     text-align: center;
   }
-  
   &__button {
     width: 290px;
     height: 48px;
@@ -31,7 +28,6 @@
     cursor: pointer;
   }
 }
-
 .vacancy {
   display: flex;
   margin-top: 15px;
@@ -39,12 +35,9 @@
   height: 140px;
   border: 1px solid #2b292d33;
   border-radius: 8px;
-  
-  
   &:nth-of-type(1) {
     margin-top: 39px;
   }
-  
   &__name {
     margin: 19px 21px 7px 20px;
     display: inline-block;
@@ -52,13 +45,11 @@
     line-height: 28px;
     font-weight: 700;
   }
-  
   &__place {
     margin: 0 21px 0 20px;
     font-size: 16px;
     line-height: 22px;
   }
-  
   &__button {
     display: flex;
     justify-content: center;
@@ -70,13 +61,13 @@
     border-radius: 0 6px 6px 0;
     border-collapse: collapse;
   }
-  
   &__button-arrow {
+    display: inline-block;
     width: 7px;
     height: 12px;
+    background-image: url("https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/icon-arrow-right.png");
   }
 }
-
 @include desk() {
   .hiring {
     display: flex;
@@ -84,82 +75,59 @@
     align-items: center;
     padding: 0;
     padding: 105px 0 110px 0;
-    
     &__title {
       font-size: 55px;
       line-height: 55px;
     }
-    
     &__description {
       width: 555px;
       margin-top: 20px;
     }
-    
     &__button {
       width: 247px;
       height: 48px;
       margin-top: 28px;
     }
   }
-  
   .vacancy {
+    &:hover,.vacancy__button-arrow{
+      color: white;
+    }
     display: flex;
     justify-content: space-between;
     padding-left: 25px;
     margin-top: 20px;
     width: 750px;
     height: 81px;
-    
     &:hover {
       background-color: $third-blue-color;
       color: $main-color;
       cursor: pointer;
     }
-    
     &:first-of-type {
       margin-top: 110px;
     }
-    
     &__container {
       display: flex;
       justify-content: space-between;
       align-items: center;
     }
-    
     &__name {
       margin: 0;
       width: 400px;
     }
-    
     &__place {
       margin: 0;
     }
-    
     &__button {
       height: 100%;
       background-color: transparent;
       border: none;
     }
-    
-    &__button-arrow-white {
-      display: none;
-      width: 7px;
-      height: 12px;
-    }
-    
-    &:hover &__button-arrow {
-      display: none;
-    }
-    
-    &:hover &__button-arrow-white {
-      display: block;
-    }
   }
 }
-
-
 .vacancy {
-  &__button-arrow-white {
+  &__button-arrow_white {
     display: none;
   }
 }
