@@ -4,6 +4,9 @@
   height: 64px;
   min-width: 320px;
 }
+.header__start-button {
+  display: none;
+}
 @media screen and (min-width: 1400px) {
   .header__start-button {
     width: 160px;
@@ -15,6 +18,7 @@
     color: #fff;
     background-color: #3040c4;
     cursor: pointer;
+    display: inline-block;
     margin-left: 56px;
   }
 }
@@ -53,22 +57,25 @@
   font-size: 18px;
 }
 .header-logo__description {
-  line-height: 25px;
-  font-size: 18px;
-  opacity: 0.6;
-}
-
-.header-logo__description {
   display: none;
+}
+@media screen and (min-width: 1400px) {
+  .header-logo__description {
+    display: block;
+    line-height: 25px;
+    font-size: 18px;
+    opacity: 0.6;
+  }
 }
 
 .navigation {
   display: none;
 }
-
-.navigation {
-  display: flex;
-  margin-left: auto;
+@media screen and (min-width: 1400px) {
+  .navigation {
+    display: flex;
+    margin-left: auto;
+  }
 }
 .navigation__item {
   margin-right: 50px;

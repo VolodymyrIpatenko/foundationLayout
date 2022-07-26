@@ -1,13 +1,14 @@
- 
+
  .header {
   display: flex;
   height: 64px;
   min-width: 320px;
   &__start-button {
-    // display: none;
+    display: none;
     @include desk(){
     @include start-btn();
-      margin-left: 56px;
+    display: inline-block;
+    margin-left: 56px;
     }
   }
   &__menu-button {
@@ -44,22 +45,22 @@
     font-size: 18px;
   }
   &__description {
+    display:none;
+    @include desk(){
+    display:block;
     line-height: 25px;
     font-size: 18px;
     opacity: 0.6;
+    }
   }
 }
-.header-logo {
-  &__description {
-    display: none;
-  }
-}
+
 .navigation {
-  display: none;
-}
-.navigation {
+  display:none;
+  @include desk(){
   display: flex;
   margin-left: auto;
+  }
   &__item {
     margin-right: 50px;
     text-decoration: none;
