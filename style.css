@@ -1300,6 +1300,26 @@ footer__line {
   display: block;
 }
 
+.about-company {
+  padding-left: 130px;
+  margin-top: 44px;
+  width: 615px;
+}
+.about-company__description {
+  display: none;
+}
+@media screen and (min-width: 1400px) {
+  .about-company__description {
+    display: inline-block;
+    margin-top: 26px;
+    width: 360px;
+    height: 85px;
+    font-size: 18px;
+    line-height: 26px;
+    color: rgba(43, 41, 45, 0.6);
+  }
+}
+
 @media screen and (min-width: 1400px) {
   .footer {
     display: flex;
@@ -1345,27 +1365,6 @@ footer__line {
     font-size: 18px;
     line-height: 25px;
   }
-  .about-company {
-    padding-left: 130px;
-    margin-top: 44px;
-    width: 615px;
-  }
-  .about-company__description {
-    display: none;
-  }
-}
-@media screen and (min-width: 1400px) and (min-width: 1400px) {
-  .about-company__description {
-    display: inline-block;
-    margin-top: 26px;
-    width: 360px;
-    height: 85px;
-    font-size: 18px;
-    line-height: 26px;
-    color: rgba(43, 41, 45, 0.6);
-  }
-}
-@media screen and (min-width: 1400px) {
   .downloads {
     margin: 0;
     margin-top: 25px;
@@ -1376,14 +1375,10 @@ footer__line {
   .downloads__item:last-of-type {
     margin-left: 10px;
   }
-}
-@media screen and (min-width: 1400px) {
   .additional-navigation {
     display: flex;
     margin-top: 60px;
   }
-}
-@media screen and (min-width: 1400px) {
   .product-nav__title,
 .company-nav__title {
     margin: 0;
@@ -1396,13 +1391,9 @@ footer__line {
     font-size: 18px;
     line-height: 30px;
   }
-}
-@media screen and (min-width: 1400px) {
   .company-nav {
     margin-left: 90px;
   }
-}
-@media screen and (min-width: 1400px) {
   .terms-nav {
     display: flex;
     justify-content: space-between;
@@ -1412,8 +1403,6 @@ footer__line {
   .terms-nav__item {
     margin: 0;
   }
-}
-@media screen and (min-width: 1400px) {
   .social-links {
     margin: 0;
   }
